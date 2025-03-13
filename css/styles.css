@@ -1,0 +1,122 @@
+body {
+    font-family: Georgia, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); 
+}
+
+header {
+    background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; 
+}
+
+#logo {
+    position: absolute;
+    left: 20px; 
+    top: 20px; 
+    width: 50px; 
+    height: auto; 
+}
+
+main {
+    padding: 20px;
+}
+
+#home {
+    text-align: center;
+    margin-bottom: 40px;
+}
+#home button {
+        margin-top: 20px; 
+    }
+
+    #home div {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    #home button {
+        margin-top: 20px; 
+    }
+
+#home img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item, .cart-item {
+    background: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.menu-image {
+    width: 100%; 
+    max-width: 300px;
+    height: auto; 
+    border-radius: 10px; 
+    margin: 10px 0; 
+}
+
+.menu-item:hover, .cart-item:hover {
+    transform: scale(1.02);
+}
+
+button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+#menu, #cart {
+    margin-top: 20px;
+}
+
+#cart {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#total-price {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#order-success {
+    text-align: center;
+    margin-top: 40px;
+    background: #c8e6c9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

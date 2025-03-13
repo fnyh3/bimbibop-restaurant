@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bimbimbop-restaurant</title>
+    <link rel="stylesheet" href="css\styles.css">
+</head>
+<body>
+    <header>
+        <img src="png\smiling.png" alt="Logo" id="logo">
+        <h1><strong>BibimBop! Restaurant</strong></h1>
+    </header>
+    <main>
+        <section id="home">
+            <h2><strong>Annyeong, K-Food Lovers! </strong></h2>
+            <p>Siap untuk petualangan rasa yang bikin nagih? Di <b>BibimBop!</b><br> Setiap suapan penuh warna, rasa, dan keseruan! <br> Dari Bibimbap yang meledak di mulut hingga Tteokbokki yang pedasnya bikin happy, semua ada di sini!</p>
+            <div style="text-align: center;">
+                <img src="png\restaurant.jpg" alt="Restoran" style="width:100%; max-width:600px;">
+                <button onclick="showMenu()" style="margin-top: 20px;">Lihat Menu</button>
+            </div>    
+        </section>
+        <section id="menu" style="display:none;">
+            <h2>Menu Makanan</h2>
+            <div class="menu-item">
+                <img src="png\bulgogi.jpg" class="menu-image">>
+                <h3>Bulgogi</h3>
+                <p class="menu-description">Irisan daging sapi premium yang dimarinasi dalam saus manis gurih khas Korea, dipanggang hingga juicy dan wangi. Disajikan dengan nasi hangat, wijen panggang, dan sayuran segar. Lezat, empuk, dan bikin nagih! </p>
+                <p><strong>Rp 50.000</strong></p>
+                <button onclick="addToCart('Bulgogi', 50000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="menu-item">
+                <img src="png\kimbab.jpg" class="menu-image">
+                <h3>Kimbab</h3>
+                <p class="menu-description">Gulungan nasi Korea yang diisi dengan wortel, timun, telur, dan pilihan topping spesial, lalu dibalut rumput laut renyah. Sehat, praktis, dan cocok buat camilan kapan saja! </p>
+                <p><strong>Harga: Rp 15.000</strong></p>
+                <button onclick="addToCart('Kimbab', 15000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="menu-item">
+                <img src="png\topokki.jpg" class="menu-image">
+                <h3>Tteokbokki</h3>
+                <p class="menu-description">Rice cake kenyal yang dimasak dalam saus gochujang pedas manis, berpadu sempurna dengan fish cake dan taburan wijen. Tambah keju leleh biar makin creamy! Pedasnya bikin happy!  </p>
+                <p><strong>Rp 20.000</strong></p>
+                <button onclick="addToCart('Tteokbokki', 20000)">Tambah ke Keranjang</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Keranjang Belanja</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: Rp 0</p>
+            <button onclick="placeOrder()">Pesan Sekarang</button>
+        </section>
+        <section id="order-success" style="display:none;">
+            <h2>Pesanan Berhasil!</h2>
+            <p><strong>Terima kasih telah memesan di Bimbimbop! </strong> <br> Pesanan Anda sedang diproses.</p>
+            <button onclick="resetOrder()">Kembali ke Menu</button>
+        </section>
+    </main>
+    <script src="js\script.js"></script>
+</body>
+</html>
